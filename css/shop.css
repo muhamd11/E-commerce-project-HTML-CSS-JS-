@@ -1,0 +1,129 @@
+/* Start Landing */
+.landing-shop {
+  background-image: url("../img/banner/b1.jpg");
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 14px;
+}
+.landing-shop h2,
+.landing-shop p {
+  color: #fff;
+}
+/* End Landing */
+
+/* Start Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.pagination a {
+  width: 15px;
+  height: 15px;
+  border: 1px solid #088178;
+  color: #088178;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+  -moz-transition: 0.3s ease;
+  -ms-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+}
+.pagination a.active {
+  background-color: #088178;
+  color: #fff;
+}
+
+/* End Pagination */
+
+/* Start Single Product */
+.product-details {
+  display: flex;
+  margin-top: 40px;
+}
+@media (max-width:477px) {
+  .product-details {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.product-details .img-gallery {
+  width: 40%;
+  margin-right: 50px;
+}
+@media (max-width:477px) {
+  .product-details .img-gallery {
+    width: 100%;
+    margin: 0;
+  }
+}
+.product-details .img-gallery .main-img {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+}
+.sub-img {
+  display: flex;
+  gap: 5px;
+}
+.sub-img .img-col {
+  flex-basis: 100%;
+  cursor: pointer;
+}
+.sub-img .img-col img {
+  max-width: 100%;
+}
+.product-details .product-info {
+    width: 50%;
+    padding-top: 30px;
+}
+@media (max-width:477px) {
+  .product-details .product-info {
+    width: 100%;
+  }
+}
+.product-details .product-info h4 {
+    padding: 40px 0 20px 0;
+}
+.product-details .product-info h2 {
+    font-size: 26px;
+}
+.product-details .product-info select {
+    display: block;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+.product-details .product-info select:focus {
+    outline: none;
+}
+.product-details .product-info input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    text-align: center;
+}
+.product-details .product-info input:focus {
+    outline: none;
+}
+.product-details .product-info button {
+    background-color: #088178;
+    color: #fff;
+}
+.product-details .product-info span {
+    line-height: 25px;
+}
+/* End Single Product */

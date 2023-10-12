@@ -1,0 +1,85 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 477px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+@media (max-width: 976px) {
+  .contact {
+    flex-direction: column;
+  }
+}
+.contact .detail h2 {
+  font-size: 35px;
+}
+.contact .detail h3 {
+  margin: 30px 0;
+}
+.contact .detail li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 477px) {
+  .contact .map iframe {
+    max-width: 100%;
+  }
+}
+@media (max-width: 976px) {
+  .contact .map iframe {
+    max-width: 100%;
+  }
+}
+.form form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media (max-width: 477px) {
+    .form form {
+        width: 100%;
+    }
+}
+.form form h2 {
+  margin-bottom: 30px;
+}
+.form form input,
+.form form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+
+.form form input::placeholder,
+.form form textarea::placeholder {
+    transition: .5s ease;
+    -webkit-transition: .5s ease;
+    -moz-transition: .5s ease;
+    -ms-transition: .5s ease;
+    -o-transition: .5s ease;
+}
+.form form input:focus::placeholder,
+.form form textarea:focus::placeholder {
+    opacity: 0;
+}
+.form form button {
+  background-color: #088178;
+  color: white;
+}
+.form form button:hover {
+    background-color: #05504b;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}

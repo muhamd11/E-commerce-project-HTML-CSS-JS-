@@ -1,0 +1,116 @@
+/* Start Landing */
+.heading {
+  background-image: url("../img/banner/b19.jpg");
+  background-size: cover;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 14px;
+}
+.heading h2,
+.heading p {
+  color: #fff;
+}
+.blog {
+  padding: 150px 150px 0 150px;
+}
+@media (max-width:477px) {
+  .blog {
+    padding: 150px 0 0 0;
+  }
+}
+@media (max-width: 821px) {
+  .blog {
+    padding: 150px 0 0 0;
+  }
+}
+.blog .blog-box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width:477px) {
+  .blog .blog-box {
+    flex-direction: column;
+  }
+}
+.blog .blog-box .blog-img {
+  width: 50%;
+  margin: 40px;
+}
+@media (max-width:477px) {
+  .blog .blog-box .blog-img {
+    width: 90%;
+  }
+}
+.blog .blog-box .blog-img img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.blog .blog-box {
+  position: relative;
+}
+@media (max-width:477px) {
+  .blog .blog-box {
+    margin-bottom: 50px;
+  }
+}
+.blog .blog-box .blog-details {
+  width: 50%;
+}
+@media (max-width:477px) {
+  .blog .blog-box .blog-details {
+    width: 100%;
+    padding-left: 15px;
+  }
+}
+.blog .blog-box .blog-details a {
+  font-size: 14px;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.blog .blog-box .blog-details a:hover {
+  color: #088178;
+}
+.blog .blog-box .blog-details a::after {
+  content: "";
+  position: absolute;
+  width: 95px;
+  height: 1px;
+  background-color: #000;
+  top: 50%;
+  left: 170px;
+  transition: .3s ease;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -ms-transition: .3s ease;
+  -o-transition: .3s ease;
+}
+.blog .blog-box .blog-details a:hover::after {
+  background-color: #088178;
+}
+.blog .blog-box h1 {
+  position: absolute;
+  top: -55px;
+  left: 37px;
+  z-index: -1;
+  color: #c9cbce;
+  font-size: 70px;
+  font-weight: 700;
+}
+/* End Landing */

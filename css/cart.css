@@ -1,0 +1,112 @@
+.cart {
+  overflow-x: auto;
+}
+.cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+  white-space: nowrap;
+}
+.cart table td:nth-child(1) {
+  width: 100px;
+  text-align: center;
+}
+.cart table td:nth-child(2) {
+  width: 150px;
+  text-align: center;
+}
+.cart table td:nth-child(3) {
+  width: 250px;
+  text-align: center;
+}
+.cart table td:nth-child(4),
+.cart table td:nth-child(5),
+.cart table td:nth-child(6) {
+  width: 150px;
+  text-align: center;
+}
+.cart table td:nth-child(5) input {
+  width: 70px;
+  padding: 10px 5px 10px 15px;
+}
+.cart table thead {
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+.cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+  padding: 18px 0;
+}
+.cart table tbody tr td {
+  padding-top: 18px;
+}
+.cart table tbody tr td img {
+  width: 70px;
+}
+.cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .cart-add {
+    flex-direction: column;
+  }
+}
+.cart-add .coupon {
+  flex-basis: 50%;
+  margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  .cart-add .coupon {
+    flex-basis: 100%;
+  }
+}
+.cart-add .coupon h3 {
+  padding-bottom: 15px;
+}
+.cart-add .coupon input {
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #e2e0e1;
+}
+.cart-add .coupon button {
+  background-color: #088178;
+  color: #fff;
+  padding: 12px 20px;
+}
+.cart-add .cart-total {
+  flex-basis: 50%;
+  margin-bottom: 30px;
+  border: 1px solid #e2e9e1;
+  padding: 30px;
+}
+@media (max-width: 768px) {
+  .cart-add .cart-total {
+    flex-basis: 100%;
+  }
+}
+.cart-add .cart-total h3 {
+  padding-bottom: 15px;
+}
+.cart-add .cart-total table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.cart-add .cart-total table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 10px;
+}
+.cart-add .cart-total button {
+  background-color: #088178;
+  color: #fff;
+  padding: 10px 20px;
+  width: 40%;
+}

@@ -1,0 +1,52 @@
+.heading {
+    background-image: url("../img/about/banner.png");
+}
+.about {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+@media (max-width: 477px) {
+    .about {
+        flex-direction: column;
+    }
+}
+.about img {
+    width: 50%;
+    height: auto;
+}
+@media (max-width: 477px) {
+    .about img {
+        width: 100%;
+    }
+}
+.our-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (max-width: 477px) {
+    .our-app h1 {
+        font-size: 30px;
+    }
+}
+.our-app h1 a {
+    color: #088178;
+    text-decoration: underline;
+}
+.our-app .video {
+    text-align: center;
+}
+.our-app .video video {
+    max-width: 60%;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+@media (max-width: 477px) {
+    .our-app .video video {
+        max-width: 100%;
+    }
+}
